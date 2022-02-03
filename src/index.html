@@ -56,10 +56,15 @@
         padding: 10px;
       }
 
+      :root {
+        --red-color: red;
+      }
       .red-box {
-        background-color: crimson;
-        color: #fff;
-        padding: 1.5em;
+        background: red;
+        background: var(--red-color);
+
+        height: 200px;
+        width: 200px;
       }
 
       .blue-box {
@@ -327,6 +332,7 @@
           <div class="beak-bottom"></div>
         </div>
       </div>
+      <div class="red-box"></div>
       <h1 class="red-text">I am red!</h1>
 
       <h1 class="green-text">I am green!</h1>
